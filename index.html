@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Galeri</title>
+    <style>
+
+        .galeri{
+            display: flex;
+            height: 20rem;
+            gap: 1rem;
+        }
+
+        .galeri div{
+            flex: 1;
+            border-radius: 1rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
+            transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+        }
+
+        .galeri div:hover{
+            flex: 5;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="galeri">
+        <div style="background-image: url('https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg?w=2000');"></div>
+        <div style="background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v546batch3-mynt-31-badgewatercolor_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=e1ee6e84fa2c584170bab2733ea5a1b0');"></div>
+        <div style="background-image: url('https://t3.ftcdn.net/jpg/00/46/44/02/360_F_46440268_HxTMxCec1EntidRNV0mrw1wMDtMcYk8g.jpg');"></div>
+        <div style="background-image: url('https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg');"></div>
+        <div style="background-image: url('https://i0.wp.com/www.flutterbeads.com/wp-content/uploads/2021/11/set-background-image-flutter-hero.jpeg?fit=1920%2C1280&ssl=1');"></div>
+    </div>
+
+</body>
+
+</html>
